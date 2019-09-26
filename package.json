@@ -1,0 +1,40 @@
+{
+  "name": "repro-ts-rollup-issue",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "@getgo/raascal-enums": "^4.0.0",
+    "@getgo/rtc-api": "^4.0.0",
+    "rxjs": "^6.2.2"
+  },
+  "devDependencies": {
+    "rimraf": "2.6.3",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-typescript": "7.3.3",
+    "chalk": "2.4.2",
+    "handlebars": "4.1.1",
+    "rollup": "1.21.2",
+    "rollup-plugin-typescript2": "0.24.2",
+    "shelljs": "0.8.3",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "typedoc": "^0.14.2",
+    "typescript": "3.1.6"
+  }
+}
