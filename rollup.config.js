@@ -17,6 +17,7 @@ export default [
     ],
     plugins: [
       typescript({
+        verbosity: 3,
         typescript: require('typescript'),
         useTsconfigDeclarationDir: true,
       }),
